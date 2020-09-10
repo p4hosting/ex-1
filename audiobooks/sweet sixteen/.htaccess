@@ -1,0 +1,6 @@
+# Set up caching for media files
+<FilesMatch "\.(mp3|wav)$">
+ExpiresActive On
+ExpiresDefault "access plus 8 months"
+Header append Cache-Control "public"
+</FilesMatch>
